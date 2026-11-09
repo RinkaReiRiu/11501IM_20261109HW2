@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植物花語翻翻樂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🌸 植物花語翻翻樂 🌸</h1>
+
+    <div class="game-rule">
+        🎮 <strong>遊戲方式</strong><br>
+        請從 <strong>上排植物卡</strong> 選擇一張，再從
+        <strong>下排花語卡</strong> 選擇一張。<br>
+        配對成功即可消除卡片並解鎖植物百科介紹！
+    </div>
+
+    <p class="description">
+        找出所有正確的植物與花語配對，完成你的植物知識挑戰。
+    </p>
+
+    <div class="game-area">
+
+        <div class="row-title">
+            🌱 植物名稱
+        </div>
+
+        <div id="plantRow" class="row"></div>
+
+        <div class="row-title">
+            💬 花語
+        </div>
+
+        <div id="meaningRow" class="row"></div>
+
+        <div id="winMessage" class="win">
+            🎉 恭喜完成全部配對！
+        </div>
+
+    </div>
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-icon" onclick="closeModal()">
+                ✕
+            </button>
+
+            <h2 id="plantName"></h2>
+
+            <p id="plantInfo"></p>
+
+            <button class="next-btn" onclick="closeModal()">
+                我知道了，繼續遊戲 →
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
